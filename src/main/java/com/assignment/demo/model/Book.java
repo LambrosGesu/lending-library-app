@@ -32,8 +32,7 @@ public class Book {
     private Status status;
 
     @JsonIgnore // CAUTION NEEDS CHANGE
-//    @JsonManagedReference
-    @OneToMany(mappedBy = "BOOK")
+    @OneToMany(mappedBy = "book", targetEntity = Lending.class)
     private List<Lending> lendings;
 
 

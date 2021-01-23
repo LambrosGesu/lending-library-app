@@ -1,5 +1,7 @@
 package com.assignment.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,13 +13,15 @@ public class Lending {
     @Column(name = "lending_id")
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "user")
+    @JsonManagedReference
+    @ManyToOne(optional = false, cascade = {CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinColumn(name = "user_id")
     private User user;
 
-//    @ManyToOne
-//    @JoinColumn(name = "book")
-//    private Book book;
+    @JsonManagedReference
+    @ManyToOne(optional = false, cascade = {CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinColumn(name = "book_id")
+    private Book book;
 
     @Column(name = "issue_date")
     private String issueDate;
@@ -28,9 +32,11 @@ public class Lending {
     public Lending() {
     }
 
-//    public Lending(User user, Book book, String issueDate) {
-//        this.user = user;
-//        this.book = book;
-//        this.issueDate = issueDate;
-//    }
+
+    public Lending(User user, Book book, String issueDate, String returnDate) {
+        this.user = user;
+        this.book = book;
+        this.issueDate = issueDate;
+        this.returnDate = returnDate;
+    }
 }

@@ -36,7 +36,7 @@ public class User {
     private UserRole role;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "USER")
+    @OneToMany(mappedBy = "user")
     private List<Lending> lendings;
 
     public User() {
