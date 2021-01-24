@@ -13,4 +13,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     List<User> findAll();
 
     void deleteUserByNameAndSurname(String name, String surname);
+
+//    @Query(value="SELECT DISTINCT user FROM User user WHERE user.username = :username")
+//    User findUserByUsername(@Param("username") String username);
 }

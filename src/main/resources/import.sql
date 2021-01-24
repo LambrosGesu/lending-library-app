@@ -17,13 +17,13 @@ INSERT INTO BOOK (book_title, publication_year, author, status) VALUES ('Princes
 INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('1','2','12/12/2020','10/02/2021');
 INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('2','4','13/12/2020','11/02/2021');
 INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('1','3','14/12/2020','12/02/2021');
-INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('3','5','15/12/2020','13/07/2021');
+INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('3','5','15/10/2020','13/07/2021');
 INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('1','2','16/12/2020','14/02/2021');
 INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('1','5','17/12/2020','18/02/2021');
 INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('3','2','18/12/2020','15/08/2021');
-INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('1','8','19/12/2020','17/02/2021');
+INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('1','8','19/10/2020','17/02/2021');
 INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('1','2','12/12/2020','19/05/2021');
 INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('2','7','12/12/2020','10/02/2021');
-INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('2','2','12/12/2020','10/02/2021');
-INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('3','4','12/12/2020','10/02/2021');
+INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('2','2','05/11/2020','10/02/2021');
+INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('3','4','12/10/2020','10/02/2021');
 INSERT INTO LENDING (user_id, book_id, issue_date, return_date) VALUES ('3','8','12/12/2020','10/02/2021');
